@@ -1,6 +1,6 @@
 ---
 layout: information
-title: About
+title: about
 description: linksOML is simple but effective!
 ---
 linksOML was designed a more or less a simple test of my own development abilities in a short time

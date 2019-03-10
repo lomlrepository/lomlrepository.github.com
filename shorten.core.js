@@ -12,7 +12,7 @@ let createHash = () => {
 
 let createLink = () => {
     if (!element('customHash') || element('customHash').value == '') {
-		window.location.hash = createHash();
+	window.location.hash = createHash();
         checkIsUnique();
     } else {
         window.location.hash = element('customHash').value;
@@ -77,11 +77,4 @@ let shortURL = () => {
 			}
 		}
 	}
-}let createShort = () => {
-    if (!document.getElementById('customHash') || document.getElementById('customHash').value == '') {
-        window.location.hash = createHash();
-        checkIsUnique();
-    } else {
-        window.location.hash = document.getElementById('customHash').value;
-    }
 };

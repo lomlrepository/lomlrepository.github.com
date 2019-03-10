@@ -78,3 +78,4 @@ let shortURL = () => {
 		}
 	}
 };
+element('submit').addEventListener('click', shortURL);

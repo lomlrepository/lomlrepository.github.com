@@ -1,10 +1,8 @@
 ---
 layout: information
-title: terms of service
-description: Things you should know about using this website!
+title: privacy policy
+description: What we do to protect your privacy.
 ---
-
-Privacy Policy
 
 Your privacy is important to us. It is linksOML's policy to respect your 
 privacy regarding any information we may collect from you across our website, 

@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+<title>{{ site.title }}</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="{{ site.description }}">
+<meta name="theme-color" content="#{{ site.color }}">
+<!-- OpenGraph Tags -->
+<meta property="og:title" content="{{ site.title }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:description" content="{{ site.description }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ site.url }}">
+<meta property="og:image" content="/social.png">
+<!-- Twitter Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<!-- Vendor CSS -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sniglet:400,800" crossorigin="anonymous">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="/style.core.css" crossorigin="anonymous">
+<!-- Custom JS -->
+<script type="text/javascript" src="/loml.core.js"></script>
+</head>
+<body class="bg-dark text-white">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="/about" title="">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/donate" title="">Donate</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container text-center">
+		<h1 class="text-primary display-1">{{ site.title }}</h1>
+		<p class="lead">{{ site.description }}</p>
+		<br>
+		<div class="input-group mb-3">
+  			<div class="input-group-prepend">
+    			<span class="input-group-text bg-dark text-primary"><i class="fas fa-external-link-square-alt"></i></span>
+  			</div>
+ 			<input type="text" id="longURL" class="form-control bg-dark text-white" placeholder="Your Long Link...">
+		</div>
+		<div class="input-group mb-3">
+  			<div class="input-group-prepend">
+    			<span class="input-group-text bg-dark text-primary"><i class="fas fa-heart"></i></span>
+  			</div>
+ 			<input type="text" id="customHash" class="form-control bg-dark text-white" placeholder="Your Custom Extension!">
+		</div>
+    <div class="input-group mb-3">
+  			<div class="input-group-prepend">
+    			<span class="input-group-text bg-dark text-primary"><i class="fas fa-link"></i></span>
+  			</div>
+ 			<input type="text" id="shortURL" class="form-control bg-dark text-white" placeholder="Your Short Link!">
+		</div>
+		<button id="submit" class="btn btn-primary">Shorten!</button>
+		<br>
+		<p id="statusBox"></p>
+	</div>
+	<footer class="text-muted text-center">
+		<p><i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by <a href="/#creator">Dominant Design</a></p>
+	</footer>
+	<script type="text/javascript" src="/shorten.core.js"></script>
+</body>
+</html>
